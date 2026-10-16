@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>SUMOVAN STRONG BTS</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" href="favicon-64.png"><link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+<meta name="theme-color" content="#0b0b0c"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SUMOVAN BTS"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>html,body{margin:0;height:100%;background:#0b0b0c}body{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+iframe{border:0;width:100%;height:100%;display:block;background:#0b0b0c}#m{color:#fff;font:16px/1.5 system-ui,sans-serif;padding:24px}</style></head><body>
+<iframe id="f" title="SUMOVAN STRONG BTS" allow="camera"></iframe><div id="m" hidden></div>
+<script>
+/* STEP: paste your Apps Script web app link (ends with /exec) between the quotes */
+const APP_URL='PASTE_YOUR_EXEC_LINK_HERE';
+const f=document.getElementById('f'),m=document.getElementById('m');
+if(/^https:\/\/script\.google\.com\/macros\/s\/[^\s"']+\/exec$/.test(APP_URL)){f.src=APP_URL}
+else{f.hidden=true;m.hidden=false;m.textContent='Setup needed: open index.html and paste your Apps Script /exec link into APP_URL.'}
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
+</script></body></html>
