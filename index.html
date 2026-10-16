@@ -8,7 +8,7 @@ iframe{border:0;width:100%;height:100%;display:block;background:#0b0b0c}#m{color
 <iframe id="f" title="SUMOVAN STRONG BTS" allow="camera"></iframe><div id="m" hidden></div>
 <script>
 /* STEP: paste your Apps Script web app link (ends with /exec) between the quotes */
-const APP_URL='PASTE_YOUR_EXEC_LINK_HERE';
+const APP_URL='https://script.google.com/macros/s/AKfycbxfss1txAY4SZrCAu63MYclpAPbWhz-mLdIjjtkRKwtAXlwBCoO7ALu6TDoGnPWKNWyGg/exec';
 const f=document.getElementById('f'),m=document.getElementById('m');
 if(/^https:\/\/script\.google\.com\/macros\/s\/[^\s"']+\/exec$/.test(APP_URL)){f.src=APP_URL}
 else{f.hidden=true;m.hidden=false;m.textContent='Setup needed: open index.html and paste your Apps Script /exec link into APP_URL.'}
