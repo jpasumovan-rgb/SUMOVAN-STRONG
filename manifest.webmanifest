@@ -1,6 +1,6 @@
 {
-  "name": "SUMOVAN STRONG BTS",
-  "short_name": "SUMOVAN BTS",
+  "name": "SUMOVAN MM DOCs GENERATOR",
+  "short_name": "MM DOCs",
   "description": "Sumovan Logistics Billing Trip Summary generator",
   "start_url": "./",
   "scope": "./",
