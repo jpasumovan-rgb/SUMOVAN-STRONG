@@ -3,14 +3,13 @@
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" href="favicon-64.png"><link rel="apple-touch-icon" href="apple-touch-icon-180.png">
 <meta name="theme-color" content="#0b0b0c"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="MM DOCs"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<style>html,body{margin:0;height:100%;background:#0b0b0c}body{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
-iframe{border:0;width:100%;height:100%;display:block;background:#0b0b0c}#m{color:#fff;font:16px/1.5 system-ui,sans-serif;padding:24px}</style></head><body>
-<iframe id="f" title="SUMOVAN MM DOCs GENERATOR" allow="camera"></iframe><div id="m" hidden></div>
+<style>html,body{margin:0;height:100%;background:#0b0b0c;color:#fff;font:18px/1.5 system-ui,sans-serif}body{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box}
+a{display:inline-block;margin-top:18px;padding:14px 26px;border-radius:12px;background:#c8102e;color:#fff;font-weight:800;text-decoration:none}</style></head><body>
+<div><b style="font-size:1.4rem">SUMOVAN MM DOCs GENERATOR</b><br>SUMO STRONG!<br><span id="m">Opening the app...</span></div><a id="l" href="#">Open the app</a>
 <script>
-/* STEP: paste your Apps Script web app link (ends with /exec) between the quotes */
 const APP_URL='https://script.google.com/macros/s/AKfycbx-iFh71k3iHvSHMoFRP4kKY86gleX__CDyj3s2Dn9r8UVpknzVe5noqWAw5l9bYZZ7PQ/exec';
-const f=document.getElementById('f'),m=document.getElementById('m');
-if(/^https:\/\/script\.google\.com\/macros\/s\/[^\s"']+\/exec$/.test(APP_URL)){f.src=APP_URL}
-else{f.hidden=true;m.hidden=false;m.textContent='Setup needed: open index.html and paste your Apps Script /exec link into APP_URL.'}
+document.getElementById('l').href=APP_URL;
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});
+if(/^https:\/\/script\.google\.com\/macros\/s\/[^\s"']+\/exec$/.test(APP_URL)){setTimeout(function(){location.replace(APP_URL)},300)}
+else{document.getElementById('m').textContent='Setup needed: open index.html and paste your Apps Script /exec link into APP_URL.'}
 </script></body></html>
